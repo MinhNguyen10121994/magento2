@@ -1,0 +1,1 @@
+/var/www/lib/web/magnifier/magnifier.js
