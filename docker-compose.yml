@@ -17,7 +17,7 @@ services:
       - ./docker/php/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
     working_dir: /var/www
     networks:
-      - rcs-network
+      - magento-network
 
   #Nginx Service
   webserver:
@@ -31,7 +31,7 @@ services:
       - ./:/var/www
       - ./docker/nginx/conf.d/:/etc/nginx/conf.d/
     networks:
-      - rcs-network
+      - magento-network
 
   #MySQL Service
   db:
@@ -51,7 +51,7 @@ services:
       - ./docker/dbdata:/var/lib/mysql
       - ./docker/mysql/my.cnf:/etc/mysql/my.cnf
     networks:
-      - rcs-network
+      - magento-network
 
   #Elasticsearch Service
   elasticsearch:
@@ -75,7 +75,7 @@ services:
     ports:
       - 9200:9200
     networks:
-      - rcs-network
+      - magento-network
 
   kibana:
     image: docker.elastic.co/kibana/kibana:7.13.2
@@ -85,11 +85,11 @@ services:
       ELASTICSEARCH_URL: http://elasticsearch:9200
       ELASTICSEARCH_HOSTS: '["http://elasticsearch:9200"]'
     networks:
-      - rcs-network
+      - magento-network
 
 #Docker Networks
 networks:
-  rcs-network:
+  magento-network:
     driver: bridge
 
 volumes:

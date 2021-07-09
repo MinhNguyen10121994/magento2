@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="MinhNB_Jobs::job_head" title="Jobs" module="MinhNB_Jobs" sortOrder="100" resource="MinhNB_Jobs::job_head" />
+        <add id="MinhNB_Jobs::department" title="Departments" module="MinhNB_Jobs" sortOrder="10" parent="MinhNB_Jobs::job_head" action="jobs/department" resource="MinhNB_Jobs::job" />
+        <add id="MinhNB_Jobs::job" title="Jobs" module="MinhNB_Jobs" sortOrder="20" parent="MinhNB_Jobs::job_head" action="jobs/job" resource="MinhNB_Jobs::job" />
+    </menu>
+</config>

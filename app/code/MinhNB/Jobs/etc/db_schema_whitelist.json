@@ -1,0 +1,29 @@
+{
+    "minhnb_department": {
+        "column": {
+            "entity_id": true,
+            "name": true,
+            "description": true,
+            "cc": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    },
+    "minhnb_job": {
+        "column": {
+            "entity_id": true,
+            "title": true,
+            "type": true,
+            "location": true,
+            "date": true,
+            "status": true,
+            "description": true,
+            "department_id": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "MINHNB_JOB_DEPARTMENT_ID_MINHNB_DEPARTMENT_ENTITY_ID": true
+        }
+    }
+}
