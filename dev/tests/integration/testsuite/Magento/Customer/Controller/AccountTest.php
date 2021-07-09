@@ -765,7 +765,7 @@ class AccountTest extends AbstractController
 
         if (preg_match('<a\s*href="(?<url>.*?)".*>', $content, $matches)) {
             $confirmationUrl = $matches['url'];
-            $confirmationUrl = str_replace('http://localhost/index.php/', '', $confirmationUrl);
+            $confirmationUrl = str_replace('http://localhost/Index.php/', '', $confirmationUrl);
             // phpcs:ignore Magento2.Functions.DiscouragedFunction
             $confirmationUrl = html_entity_decode($confirmationUrl);
         }

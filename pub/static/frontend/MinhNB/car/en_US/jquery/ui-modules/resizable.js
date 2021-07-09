@@ -1,1 +1,0 @@
-/var/www/lib/web/jquery/ui-modules/resizable.js

@@ -198,7 +198,7 @@ class CategoryTest extends AbstractBackendController
 
         if (empty($postData['return_session_messages_only'])) {
             $this->assertRedirect(
-                $this->stringContains('http://localhost/index.php/backend/catalog/category/edit/')
+                $this->stringContains('http://localhost/Index.php/backend/catalog/category/edit/')
             );
         } else {
             $result = $this->json->unserialize($body);

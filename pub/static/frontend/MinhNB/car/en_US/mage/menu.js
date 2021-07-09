@@ -1,1 +1,0 @@
-/var/www/lib/web/mage/menu.js

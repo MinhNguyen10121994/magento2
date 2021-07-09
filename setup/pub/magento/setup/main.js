@@ -51,7 +51,7 @@ main.controller('navigationController',
         load: function () {
             var self = this;
 
-            return $http.get('index.php/navigation').then(function successCallback(resp) {
+            return $http.get('Index.php/navigation').then(function successCallback(resp) {
                 var data = resp.data,
                     currentState = $location.path().replace('/', ''),
                     isCurrentStateFound = false;

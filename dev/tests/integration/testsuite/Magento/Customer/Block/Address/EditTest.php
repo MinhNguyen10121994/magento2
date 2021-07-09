@@ -85,7 +85,7 @@ class EditTest extends TestCase
      */
     public function testGetSaveUrl(): void
     {
-        $this->assertEquals('http://localhost/index.php/customer/address/formPost/', $this->block->getSaveUrl());
+        $this->assertEquals('http://localhost/Index.php/customer/address/formPost/', $this->block->getSaveUrl());
     }
 
     /**

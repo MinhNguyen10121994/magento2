@@ -21,7 +21,7 @@ class GroupTest extends \Magento\TestFramework\TestCase\AbstractBackendControlle
 
     const CUSTOMER_GROUP_CODE = 'custom_group';
 
-    const BASE_CONTROLLER_URL = 'http://localhost/index.php/backend/customer/group/';
+    const BASE_CONTROLLER_URL = 'http://localhost/Index.php/backend/customer/group/';
 
     const CUSTOMER_GROUP_ID = 2;
 

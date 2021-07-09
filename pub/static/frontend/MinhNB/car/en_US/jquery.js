@@ -1,1 +1,0 @@
-/var/www/lib/web/jquery.js
