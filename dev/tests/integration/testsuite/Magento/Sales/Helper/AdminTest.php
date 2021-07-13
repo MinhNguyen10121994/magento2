@@ -10,7 +10,7 @@ namespace Magento\Sales\Helper;
 use Magento\TestFramework\Helper\Bootstrap;
 
 /**
- * Tests \Magento\Sales\Helper\Admin
+ * Tests \Magento\Sales\Helper\Adminhtml
  */
 class AdminTest extends \PHPUnit\Framework\TestCase
 {

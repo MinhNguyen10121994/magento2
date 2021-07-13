@@ -118,7 +118,7 @@ class AdminUsersFixture extends Fixture
     public function introduceParamLabels()
     {
         return [
-            'admin_users' => 'Admin Users'
+            'admin_users' => 'Adminhtml Users'
         ];
     }
 

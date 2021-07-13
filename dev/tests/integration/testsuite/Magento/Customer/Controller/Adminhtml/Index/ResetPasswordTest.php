@@ -23,7 +23,7 @@ class ResetPasswordTest extends \Magento\TestFramework\TestCase\AbstractBackendC
 
     /**
      * Checks reset password functionality with no restrictive settings and customer reset request event.
-     * Admin is not affected by this security check, so reset password email must be sent.
+     * Adminhtml is not affected by this security check, so reset password email must be sent.
      *
      * @magentoConfigFixture current_store customer/password/limit_password_reset_requests_method 0
      * @magentoConfigFixture current_store customer/password/min_time_between_password_reset_requests 0
@@ -63,7 +63,7 @@ class ResetPasswordTest extends \Magento\TestFramework\TestCase\AbstractBackendC
     /**
      * Checks reset password functionality with default restrictive min time between
      * password reset requests and customer reset request event.
-     * Admin is not affected by this security check, so reset password email must be sent.
+     * Adminhtml is not affected by this security check, so reset password email must be sent.
      *
      * @magentoConfigFixture current_store customer/password/max_number_password_reset_requests 0
      * @magentoConfigFixture current_store customer/password/min_time_between_password_reset_requests 10
@@ -86,7 +86,7 @@ class ResetPasswordTest extends \Magento\TestFramework\TestCase\AbstractBackendC
     /**
      * Checks reset password functionality with default restrictive limited number
      * password reset requests and customer reset request event.
-     * Admin is not affected by this security check, so reset password email must be sent.
+     * Adminhtml is not affected by this security check, so reset password email must be sent.
      *
      * @magentoConfigFixture current_store customer/password/max_number_password_reset_requests 1
      * @magentoConfigFixture current_store customer/password/min_time_between_password_reset_requests 0

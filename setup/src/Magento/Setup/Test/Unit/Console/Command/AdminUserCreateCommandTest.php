@@ -157,11 +157,11 @@ class AdminUserCreateCommandTest extends TestCase
         return [
             [
                 'mode' => InputOption::VALUE_REQUIRED,
-                'description' => '(Required) Admin email',
+                'description' => '(Required) Adminhtml email',
             ],
             [
                 'mode' => InputOption::VALUE_OPTIONAL,
-                'description' => 'Admin email',
+                'description' => 'Adminhtml email',
             ],
         ];
     }

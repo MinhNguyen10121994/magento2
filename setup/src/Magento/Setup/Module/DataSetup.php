@@ -24,7 +24,7 @@ class DataSetup extends \Magento\Framework\Module\Setup implements ModuleDataSet
     private $setupCache;
 
     /**
-     * Event manager
+     * Observer manager
      *
      * @var \Magento\Framework\Event\ManagerInterface
      */

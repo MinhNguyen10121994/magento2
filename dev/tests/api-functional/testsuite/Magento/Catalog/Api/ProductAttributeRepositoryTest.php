@@ -198,7 +198,7 @@ class ProductAttributeRepositoryTest extends \Magento\TestFramework\TestCase\Web
                         "store_labels" => [
                             [
                                 "store_id" => 0,
-                                "label" => "Admin Green"
+                                "label" => "Adminhtml Green"
                             ],
                             [
                                 "store_id" => 1,
@@ -421,7 +421,7 @@ class ProductAttributeRepositoryTest extends \Magento\TestFramework\TestCase\Web
                         "store_labels" => [
                             [
                                 "store_id" => 0,
-                                "label" => "Admin Red"
+                                "label" => "Adminhtml Red"
                             ],
                             [
                                 "store_id" => 1,
@@ -437,7 +437,7 @@ class ProductAttributeRepositoryTest extends \Magento\TestFramework\TestCase\Web
                         "store_labels" => [
                             [
                                 "store_id" => 0,
-                                "label" => "Admin Blue"
+                                "label" => "Adminhtml Blue"
                             ],
                             [
                                 "store_id" => 1,

@@ -131,7 +131,7 @@ class Installer
     private $moduleLoader;
 
     /**
-     * Admin account factory
+     * Adminhtml account factory
      *
      * @var AdminAccountFactory
      */
@@ -391,7 +391,7 @@ class Installer
         }
         $this->log->logSuccess('Magento installation complete.');
         $this->log->logSuccess(
-            'Magento Admin URI: /'
+            'Magento Adminhtml URI: /'
             . $this->deploymentConfig->get(BackendConfigOptionsList::CONFIG_PATH_BACKEND_FRONTNAME)
         );
 
@@ -1278,7 +1278,7 @@ class Installer
         }
 
         $adminUserModuleIsInstalled = (bool)$this->deploymentConfig->get('modules/Magento_User');
-        //Admin user data is not system data, so we need to install it only if schema for admin user was installed
+        //Adminhtml user data is not system data, so we need to install it only if schema for admin user was installed
         if ($adminUserModuleIsInstalled) {
             $this->assertDbConfigExists();
             $data += ['db-prefix' => $this->deploymentConfig->get(ConfigOptionsListConstants::CONFIG_PATH_DB_PREFIX)];

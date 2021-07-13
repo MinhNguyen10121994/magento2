@@ -39,7 +39,7 @@ class InfoAdminUriCommand extends Command
     protected function configure()
     {
         $this->setName('info:adminuri')
-            ->setDescription('Displays the Magento Admin URI');
+            ->setDescription('Displays the Magento Adminhtml URI');
         parent::configure();
     }
 
@@ -49,7 +49,7 @@ class InfoAdminUriCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $output->writeln(
-            "\nAdmin URI: /"
+            "\nAdminhtml URI: /"
             . $this->deploymentConfig->get(BackendConfigOptionsList::CONFIG_PATH_BACKEND_FRONTNAME)
             . "\n"
         );

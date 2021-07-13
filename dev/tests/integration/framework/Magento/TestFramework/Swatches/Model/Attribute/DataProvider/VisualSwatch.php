@@ -180,7 +180,7 @@ class VisualSwatch extends AbstractSwatchAttributeData
                     ],
                     'value' => [
                         'option_0' => [
-                            0 => 'Admin black test 1',
+                            0 => 'Adminhtml black test 1',
                             1 => 'Default store view black test 1',
                         ],
                     ],
@@ -201,7 +201,7 @@ class VisualSwatch extends AbstractSwatchAttributeData
                     ],
                     'value' => [
                         'option_1' => [
-                            0 => 'Admin white test 2',
+                            0 => 'Adminhtml white test 2',
                             1 => 'Default store view white test 2',
                         ],
                     ],

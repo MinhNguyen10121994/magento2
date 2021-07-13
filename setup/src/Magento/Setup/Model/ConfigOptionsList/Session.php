@@ -223,7 +223,7 @@ class Session implements ConfigOptionsListInterface
                 self::INPUT_KEY_SESSION_REDIS_BREAK_AFTER_ADMINHTML,
                 TextConfigOption::FRONTEND_WIZARD_TEXT,
                 self::CONFIG_PATH_SESSION_REDIS_BREAK_AFTER_ADMINHTML,
-                'Number of seconds to wait before trying to break a lock for Admin session'
+                'Number of seconds to wait before trying to break a lock for Adminhtml session'
             ),
             new TextConfigOption(
                 self::INPUT_KEY_SESSION_REDIS_FIRST_LIFETIME,

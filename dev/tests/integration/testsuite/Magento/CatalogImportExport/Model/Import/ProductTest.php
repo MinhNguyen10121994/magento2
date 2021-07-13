@@ -1282,7 +1282,7 @@ class ProductTest extends TestCase
         $this->assertTrue($errors->getErrorsCount() == 1);
         $this->assertEquals(
             "Value for 'multiselect_attribute' attribute contains incorrect value, "
-            . "see acceptable values on settings specified for Admin",
+            . "see acceptable values on settings specified for Adminhtml",
             $errors->getErrorByRowNumber(1)[0]->getErrorMessage()
         );
     }

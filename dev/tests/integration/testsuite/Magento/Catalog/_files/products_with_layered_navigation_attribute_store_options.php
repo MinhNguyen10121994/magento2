@@ -51,14 +51,14 @@ if (!$attribute->getId()) {
             'used_in_product_listing' => 1,
             'used_for_sort_by' => 1,
             'frontend_label' => [
-                Store::DEFAULT_STORE_ID => 'Test Configurable Admin Store',
+                Store::DEFAULT_STORE_ID => 'Test Configurable Adminhtml Store',
                 Store::DISTRO_STORE_ID => 'Test Configurable Default Store',
                 $store->getId() => 'Test Configurable Test Store'
             ],
             'backend_type' => 'int',
             'option' => [
                 'value' => ['option_0' => [
-                    Store::DEFAULT_STORE_ID => 'Option Admin Store',
+                    Store::DEFAULT_STORE_ID => 'Option Adminhtml Store',
                     Store::DISTRO_STORE_ID => 'Option Default Store',
                     $store->getId() => 'Option Test Store'
                 ], 'option_1' => ['Option 2']],

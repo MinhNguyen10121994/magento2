@@ -196,7 +196,7 @@ class CustomerRepositoryTest extends \PHPUnit\Framework\TestCase
                 'email' => $email,
                 'firstname' => $firstName,
                 'lastname' => $lastName,
-                'created_in' => 'Admin',
+                'created_in' => 'Adminhtml',
                 'password' => 'notsaved',
                 'default_billing' => $defaultBilling,
                 'default_shipping' => $defaultShipping
@@ -219,7 +219,7 @@ class CustomerRepositoryTest extends \PHPUnit\Framework\TestCase
             $defaultBilling,
             $defaultShipping
         );
-        $this->assertEquals('Admin', $customerAfter->getCreatedIn());
+        $this->assertEquals('Adminhtml', $customerAfter->getCreatedIn());
         $this->accountManagement->authenticate($customerAfter->getEmail(), $newPassword);
         $attributesBefore = $this->converter->toFlatArray(
             $customerBefore,

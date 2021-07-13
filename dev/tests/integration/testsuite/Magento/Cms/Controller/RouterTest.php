@@ -55,7 +55,7 @@ class RouterTest extends \PHPUnit\Framework\TestCase
     }
 }
 /**
- * Event manager stub
+ * Observer manager stub
  * @codingStandardsIgnoreStart
  */
 namespace Magento\Framework\Event;

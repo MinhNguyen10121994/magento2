@@ -9,7 +9,7 @@ return [
             'admin' => [
                 'website_id' => '0',
                 'code' => 'admin',
-                'name' => 'Admin',
+                'name' => 'Adminhtml',
                 'sort_order' => '0',
                 'default_group_id' => '0',
                 'is_default' => '0',

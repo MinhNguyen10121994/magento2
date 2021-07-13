@@ -23,7 +23,7 @@ class PluginEvents
      * The INIT event occurs after a Composer instance is done being initialized
      *
      * The event listener method receives a
-     * Composer\EventDispatcher\Event instance.
+     * Composer\EventDispatcher\Observer instance.
      *
      * @var string
      */

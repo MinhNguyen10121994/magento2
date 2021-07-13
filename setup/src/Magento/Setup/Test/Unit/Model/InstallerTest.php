@@ -423,7 +423,7 @@ namespace Magento\Setup\Test\Unit\Model {
                 ->method('logSuccess')
                 ->withConsecutive(
                     ['Magento installation complete.'],
-                    ['Magento Admin URI: /']
+                    ['Magento Adminhtml URI: /']
                 );
 
             $this->object->install($request);

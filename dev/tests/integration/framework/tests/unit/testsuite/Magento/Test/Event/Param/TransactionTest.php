@@ -5,7 +5,7 @@
  */
 
 /**
- * Test class for \Magento\TestFramework\Event\Param\Transaction.
+ * Test class for \Magento\TestFramework\Observer\Param\Transaction.
  */
 namespace Magento\Test\Event\Param;
 

@@ -12735,10 +12735,10 @@ function $HttpProvider() {
      *    - **headers** – `{Object}` – Map of strings or functions which return strings representing
      *      HTTP headers to send to the server. If the return value of a function is null, the
      *      header will not be sent. Functions accept a config object as an argument.
-     *    - **eventHandlers** - `{Object}` - Event listeners to be bound to the XMLHttpRequest object.
+     *    - **eventHandlers** - `{Object}` - Observer listeners to be bound to the XMLHttpRequest object.
      *      To bind events to the XMLHttpRequest upload object, use `uploadEventHandlers`.
      *      The handler will be called in the context of a `$apply` block.
-     *    - **uploadEventHandlers** - `{Object}` - Event listeners to be bound to the XMLHttpRequest upload
+     *    - **uploadEventHandlers** - `{Object}` - Observer listeners to be bound to the XMLHttpRequest upload
      *      object. To bind events to the XMLHttpRequest object, use `eventHandlers`.
      *      The handler will be called in the context of a `$apply` block.
      *    - **xsrfHeaderName** – `{string}` – Name of HTTP header to populate with the XSRF token.
@@ -19562,7 +19562,7 @@ function $RootScopeProvider() {
        *     to true.
        *   - `defaultPrevented` - `{boolean}`: true if `preventDefault` was called.
        *
-       * @param {string} name Event name to listen on.
+       * @param {string} name Observer name to listen on.
        * @param {function(event, ...args)} listener Function to call when the event is emitted.
        * @returns {function()} Returns a deregistration function for this listener.
        */
@@ -19613,9 +19613,9 @@ function $RootScopeProvider() {
        * Any exception emitted from the {@link ng.$rootScope.Scope#$on listeners} will be passed
        * onto the {@link ng.$exceptionHandler $exceptionHandler} service.
        *
-       * @param {string} name Event name to emit.
+       * @param {string} name Observer name to emit.
        * @param {...*} args Optional one or more arguments which will be passed onto the event listeners.
-       * @return {Object} Event object (see {@link ng.$rootScope.Scope#$on}).
+       * @return {Object} Observer object (see {@link ng.$rootScope.Scope#$on}).
        */
       $emit: function(name, args) {
         var empty = [],
@@ -19684,9 +19684,9 @@ function $RootScopeProvider() {
        * Any exception emitted from the {@link ng.$rootScope.Scope#$on listeners} will be passed
        * onto the {@link ng.$exceptionHandler $exceptionHandler} service.
        *
-       * @param {string} name Event name to broadcast.
+       * @param {string} name Observer name to broadcast.
        * @param {...*} args Optional one or more arguments which will be passed onto the event listeners.
-       * @return {Object} Event object, see {@link ng.$rootScope.Scope#$on}
+       * @return {Object} Observer object, see {@link ng.$rootScope.Scope#$on}
        */
       $broadcast: function(name, args) {
         var target = this,
@@ -28895,7 +28895,7 @@ var ngControllerDirective = [function() {
  * an element is clicked.
  *
  * @param {expression} ngClick {@link guide/expression Expression} to evaluate upon
- * click. ({@link guide/expression#-event- Event object is available as `$event`})
+ * click. ({@link guide/expression#-event- Observer object is available as `$event`})
  *
  * @example
    <example name="ng-click">
@@ -28982,7 +28982,7 @@ function createEventDirective($parse, $rootScope, $exceptionHandler, directiveNa
  * The `ngDblclick` directive allows you to specify custom behavior on a dblclick event.
  *
  * @param {expression} ngDblclick {@link guide/expression Expression} to evaluate upon
- * a dblclick. (The Event object is available as `$event`)
+ * a dblclick. (The Observer object is available as `$event`)
  *
  * @example
    <example name="ng-dblclick">
@@ -29007,7 +29007,7 @@ function createEventDirective($parse, $rootScope, $exceptionHandler, directiveNa
  * The ngMousedown directive allows you to specify custom behavior on mousedown event.
  *
  * @param {expression} ngMousedown {@link guide/expression Expression} to evaluate upon
- * mousedown. ({@link guide/expression#-event- Event object is available as `$event`})
+ * mousedown. ({@link guide/expression#-event- Observer object is available as `$event`})
  *
  * @example
    <example name="ng-mousedown">
@@ -29032,7 +29032,7 @@ function createEventDirective($parse, $rootScope, $exceptionHandler, directiveNa
  * Specify custom behavior on mouseup event.
  *
  * @param {expression} ngMouseup {@link guide/expression Expression} to evaluate upon
- * mouseup. ({@link guide/expression#-event- Event object is available as `$event`})
+ * mouseup. ({@link guide/expression#-event- Observer object is available as `$event`})
  *
  * @example
    <example name="ng-mouseup">
@@ -29056,7 +29056,7 @@ function createEventDirective($parse, $rootScope, $exceptionHandler, directiveNa
  * Specify custom behavior on mouseover event.
  *
  * @param {expression} ngMouseover {@link guide/expression Expression} to evaluate upon
- * mouseover. ({@link guide/expression#-event- Event object is available as `$event`})
+ * mouseover. ({@link guide/expression#-event- Observer object is available as `$event`})
  *
  * @example
    <example name="ng-mouseover">
@@ -29081,7 +29081,7 @@ function createEventDirective($parse, $rootScope, $exceptionHandler, directiveNa
  * Specify custom behavior on mouseenter event.
  *
  * @param {expression} ngMouseenter {@link guide/expression Expression} to evaluate upon
- * mouseenter. ({@link guide/expression#-event- Event object is available as `$event`})
+ * mouseenter. ({@link guide/expression#-event- Observer object is available as `$event`})
  *
  * @example
    <example name="ng-mouseenter">
@@ -29106,7 +29106,7 @@ function createEventDirective($parse, $rootScope, $exceptionHandler, directiveNa
  * Specify custom behavior on mouseleave event.
  *
  * @param {expression} ngMouseleave {@link guide/expression Expression} to evaluate upon
- * mouseleave. ({@link guide/expression#-event- Event object is available as `$event`})
+ * mouseleave. ({@link guide/expression#-event- Observer object is available as `$event`})
  *
  * @example
    <example name="ng-mouseleave">
@@ -29131,7 +29131,7 @@ function createEventDirective($parse, $rootScope, $exceptionHandler, directiveNa
  * Specify custom behavior on mousemove event.
  *
  * @param {expression} ngMousemove {@link guide/expression Expression} to evaluate upon
- * mousemove. ({@link guide/expression#-event- Event object is available as `$event`})
+ * mousemove. ({@link guide/expression#-event- Observer object is available as `$event`})
  *
  * @example
    <example name="ng-mousemove">
@@ -29156,7 +29156,7 @@ function createEventDirective($parse, $rootScope, $exceptionHandler, directiveNa
  * Specify custom behavior on keydown event.
  *
  * @param {expression} ngKeydown {@link guide/expression Expression} to evaluate upon
- * keydown. (Event object is available as `$event` and can be interrogated for keyCode, altKey, etc.)
+ * keydown. (Observer object is available as `$event` and can be interrogated for keyCode, altKey, etc.)
  *
  * @example
    <example name="ng-keydown">
@@ -29179,7 +29179,7 @@ function createEventDirective($parse, $rootScope, $exceptionHandler, directiveNa
  * Specify custom behavior on keyup event.
  *
  * @param {expression} ngKeyup {@link guide/expression Expression} to evaluate upon
- * keyup. (Event object is available as `$event` and can be interrogated for keyCode, altKey, etc.)
+ * keyup. (Observer object is available as `$event` and can be interrogated for keyCode, altKey, etc.)
  *
  * @example
    <example name="ng-keyup">
@@ -29206,7 +29206,7 @@ function createEventDirective($parse, $rootScope, $exceptionHandler, directiveNa
  * Specify custom behavior on keypress event.
  *
  * @param {expression} ngKeypress {@link guide/expression Expression} to evaluate upon
- * keypress. ({@link guide/expression#-event- Event object is available as `$event`}
+ * keypress. ({@link guide/expression#-event- Observer object is available as `$event`}
  * and can be interrogated for keyCode, altKey, etc.)
  *
  * @example
@@ -29241,7 +29241,7 @@ function createEventDirective($parse, $rootScope, $exceptionHandler, directiveNa
  * </div>
  *
  * @param {expression} ngSubmit {@link guide/expression Expression} to eval.
- * ({@link guide/expression#-event- Event object is available as `$event`})
+ * ({@link guide/expression#-event- Observer object is available as `$event`})
  *
  * @example
    <example module="submitExample" name="ng-submit">
@@ -29298,7 +29298,7 @@ function createEventDirective($parse, $rootScope, $exceptionHandler, directiveNa
  * during an `$apply` to ensure a consistent state.
  *
  * @param {expression} ngFocus {@link guide/expression Expression} to evaluate upon
- * focus. ({@link guide/expression#-event- Event object is available as `$event`})
+ * focus. ({@link guide/expression#-event- Observer object is available as `$event`})
  *
  * @example
  * See {@link ng.directive:ngClick ngClick}
@@ -29323,7 +29323,7 @@ function createEventDirective($parse, $rootScope, $exceptionHandler, directiveNa
  * during an `$apply` to ensure a consistent state.
  *
  * @param {expression} ngBlur {@link guide/expression Expression} to evaluate upon
- * blur. ({@link guide/expression#-event- Event object is available as `$event`})
+ * blur. ({@link guide/expression#-event- Observer object is available as `$event`})
  *
  * @example
  * See {@link ng.directive:ngClick ngClick}
@@ -29340,7 +29340,7 @@ function createEventDirective($parse, $rootScope, $exceptionHandler, directiveNa
  * Specify custom behavior on copy event.
  *
  * @param {expression} ngCopy {@link guide/expression Expression} to evaluate upon
- * copy. ({@link guide/expression#-event- Event object is available as `$event`})
+ * copy. ({@link guide/expression#-event- Observer object is available as `$event`})
  *
  * @example
    <example name="ng-copy">
@@ -29362,7 +29362,7 @@ function createEventDirective($parse, $rootScope, $exceptionHandler, directiveNa
  * Specify custom behavior on cut event.
  *
  * @param {expression} ngCut {@link guide/expression Expression} to evaluate upon
- * cut. ({@link guide/expression#-event- Event object is available as `$event`})
+ * cut. ({@link guide/expression#-event- Observer object is available as `$event`})
  *
  * @example
    <example name="ng-cut">
@@ -29384,7 +29384,7 @@ function createEventDirective($parse, $rootScope, $exceptionHandler, directiveNa
  * Specify custom behavior on paste event.
  *
  * @param {expression} ngPaste {@link guide/expression Expression} to evaluate upon
- * paste. ({@link guide/expression#-event- Event object is available as `$event`})
+ * paste. ({@link guide/expression#-event- Observer object is available as `$event`})
  *
  * @example
    <example name="ng-paste">
@@ -30869,7 +30869,7 @@ NgModelController.prototype = {
    * </div>
    *
    * @param {*} value value from the view.
-   * @param {string} trigger Event that triggered the update.
+   * @param {string} trigger Observer that triggered the update.
    */
   $setViewValue: function(value, trigger) {
     this.$viewValue = value;

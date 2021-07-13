@@ -69,7 +69,7 @@ class AdminUserCreateCommand extends AbstractSetupCommand
         $questionHelper = $this->getHelper('question');
 
         if (!$input->getOption(AdminAccount::KEY_USER)) {
-            $question = new Question('<question>Admin user:</question> ', '');
+            $question = new Question('<question>Adminhtml user:</question> ', '');
             $this->addNotEmptyValidator($question);
 
             $input->setOption(
@@ -79,7 +79,7 @@ class AdminUserCreateCommand extends AbstractSetupCommand
         }
 
         if (!$input->getOption(AdminAccount::KEY_PASSWORD)) {
-            $question = new Question('<question>Admin password:</question> ', '');
+            $question = new Question('<question>Adminhtml password:</question> ', '');
             $question->setHidden(true);
 
             $question->setValidator(function ($value) {
@@ -104,7 +104,7 @@ class AdminUserCreateCommand extends AbstractSetupCommand
         }
 
         if (!$input->getOption(AdminAccount::KEY_EMAIL)) {
-            $question = new Question('<question>Admin email:</question> ', '');
+            $question = new Question('<question>Adminhtml email:</question> ', '');
             $this->addNotEmptyValidator($question);
 
             $input->setOption(
@@ -114,7 +114,7 @@ class AdminUserCreateCommand extends AbstractSetupCommand
         }
 
         if (!$input->getOption(AdminAccount::KEY_FIRST_NAME)) {
-            $question = new Question('<question>Admin first name:</question> ', '');
+            $question = new Question('<question>Adminhtml first name:</question> ', '');
             $this->addNotEmptyValidator($question);
 
             $input->setOption(
@@ -124,7 +124,7 @@ class AdminUserCreateCommand extends AbstractSetupCommand
         }
 
         if (!$input->getOption(AdminAccount::KEY_LAST_NAME)) {
-            $question = new Question('<question>Admin last name:</question> ', '');
+            $question = new Question('<question>Adminhtml last name:</question> ', '');
             $this->addNotEmptyValidator($question);
 
             $input->setOption(
@@ -185,31 +185,31 @@ class AdminUserCreateCommand extends AbstractSetupCommand
                 AdminAccount::KEY_USER,
                 null,
                 $mode,
-                $requiredStr . 'Admin user'
+                $requiredStr . 'Adminhtml user'
             ),
             new InputOption(
                 AdminAccount::KEY_PASSWORD,
                 null,
                 $mode,
-                $requiredStr . 'Admin password'
+                $requiredStr . 'Adminhtml password'
             ),
             new InputOption(
                 AdminAccount::KEY_EMAIL,
                 null,
                 $mode,
-                $requiredStr . 'Admin email'
+                $requiredStr . 'Adminhtml email'
             ),
             new InputOption(
                 AdminAccount::KEY_FIRST_NAME,
                 null,
                 $mode,
-                $requiredStr . 'Admin first name'
+                $requiredStr . 'Adminhtml first name'
             ),
             new InputOption(
                 AdminAccount::KEY_LAST_NAME,
                 null,
                 $mode,
-                $requiredStr . 'Admin last name'
+                $requiredStr . 'Adminhtml last name'
             ),
         ];
     }

@@ -29,7 +29,7 @@ use Symfony\Component\Process\PhpExecutableFinder;
 use Symfony\Component\Process\ExecutableFinder;
 
 /**
- * The Event Dispatcher.
+ * The Observer Dispatcher.
  *
  * Example in command:
  *     $dispatcher = new EventDispatcher($this->getComposer(), $this->getApplication()->getIO());
@@ -350,7 +350,7 @@ class EventDispatcher
     /**
      * @param string $className
      * @param string $methodName
-     * @param Event  $event      Event invoking the PHP callable
+     * @param Event  $event      Observer invoking the PHP callable
      */
     protected function executeEventPhpScript($className, $methodName, Event $event)
     {
@@ -450,7 +450,7 @@ class EventDispatcher
     /**
      * Finds all listeners defined as scripts in the package
      *
-     * @param  Event $event Event object
+     * @param  Event $event Observer object
      * @return array Listeners
      */
     protected function getScriptListeners(Event $event)

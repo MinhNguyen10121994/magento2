@@ -38,7 +38,7 @@ class WebsiteTest extends \PHPUnit\Framework\TestCase
         $this->_model->load('admin');
         $this->assertEquals(0, $this->_model->getId());
         $this->assertEquals('admin', $this->_model->getCode());
-        $this->assertEquals('Admin', $this->_model->getName());
+        $this->assertEquals('Adminhtml', $this->_model->getName());
     }
 
     /**

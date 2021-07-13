@@ -436,7 +436,7 @@ TAGSPUBKEY
 
             return true;
         } catch (\Exception $e) {
-            // see if we can run this operation as an Admin on Windows
+            // see if we can run this operation as an Adminhtml on Windows
             if (!is_writable(dirname($localFilename))
                 && $io->isInteractive()
                 && $this->isWindowsNonAdminUser()) {

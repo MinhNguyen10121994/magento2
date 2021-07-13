@@ -55,7 +55,7 @@ class MenuTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Verify that Admin Navigation Menu elements have correct titles & are located on correct levels
+     * Verify that Adminhtml Navigation Menu elements have correct titles & are located on correct levels
      */
     public function testRenderNavigation()
     {

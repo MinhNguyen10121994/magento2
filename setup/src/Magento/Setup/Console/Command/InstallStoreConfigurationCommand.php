@@ -199,7 +199,7 @@ class InstallStoreConfigurationCommand extends AbstractSetupCommand
                 StoreConfigurationDataMapper::KEY_ADMIN_USE_SECURITY_KEY,
                 null,
                 InputOption::VALUE_REQUIRED,
-                'Whether to use a "security key" feature in Magento Admin URLs and forms. '
+                'Whether to use a "security key" feature in Magento Adminhtml URLs and forms. '
                 . 'Deprecated, use config:set with path admin/security/use_form_key'
             ),
         ];

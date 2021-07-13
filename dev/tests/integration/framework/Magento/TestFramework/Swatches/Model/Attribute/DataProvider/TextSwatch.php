@@ -152,7 +152,7 @@ class TextSwatch extends AbstractSwatchAttributeData
                             'option_1' => [
                                 'order' => '4',
                                 'swatch' => [
-                                    Store::DEFAULT_STORE_ID => 'Swatch 1 Admin',
+                                    Store::DEFAULT_STORE_ID => 'Swatch 1 Adminhtml',
                                     'default' => 'Swatch 1 Store 1',
                                     'fixture_second_store' => 'Swatch 1 Store 2',
                                     'fixture_third_store' => 'Swatch 1 Store 3',
@@ -161,7 +161,7 @@ class TextSwatch extends AbstractSwatchAttributeData
                             'option_2' => [
                                 'order' => '5',
                                 'swatch' => [
-                                    Store::DEFAULT_STORE_ID => 'Swatch 2 Admin',
+                                    Store::DEFAULT_STORE_ID => 'Swatch 2 Adminhtml',
                                     'default' => 'Swatch 2 Store 1',
                                     'fixture_second_store' => 'Swatch 2 Store 2',
                                     'fixture_third_store' => 'Swatch 2 Store 3',
@@ -187,7 +187,7 @@ class TextSwatch extends AbstractSwatchAttributeData
                     ],
                     'value' => [
                         'option_0' => [
-                            0 => 'Admin value description 1',
+                            0 => 'Adminhtml value description 1',
                             1 => 'Default store view value description 1',
                         ],
                     ],
@@ -201,7 +201,7 @@ class TextSwatch extends AbstractSwatchAttributeData
                 'swatchtext' => [
                     'value' => [
                         'option_0' => [
-                            0 => 'Admin value 1',
+                            0 => 'Adminhtml value 1',
                             1 => 'Default store view value 1',
                         ],
                     ],
@@ -214,7 +214,7 @@ class TextSwatch extends AbstractSwatchAttributeData
                     ],
                     'value' => [
                         'option_1' => [
-                            0 => 'Admin value description 2',
+                            0 => 'Adminhtml value description 2',
                             1 => 'Default store view value description 2',
                         ],
                     ],
@@ -225,7 +225,7 @@ class TextSwatch extends AbstractSwatchAttributeData
                 'swatchtext' => [
                     'value' => [
                         'option_1' => [
-                            0 => 'Admin value 2',
+                            0 => 'Adminhtml value 2',
                             1 => 'Default store view value 2',
                         ],
                     ],

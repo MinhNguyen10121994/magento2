@@ -19,7 +19,7 @@ use Composer\Repository\RepositoryInterface;
 use Composer\EventDispatcher\Event;
 
 /**
- * The Package Event.
+ * The Package Observer.
  *
  * @author Jordi Boggiano <j.boggiano@seld.be>
  */

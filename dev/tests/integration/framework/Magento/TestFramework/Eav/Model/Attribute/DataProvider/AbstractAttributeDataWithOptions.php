@@ -89,7 +89,7 @@ abstract class AbstractAttributeDataWithOptions extends AbstractBaseAttributeDat
                         'option_1' => [
                             'order' => '5',
                             'value' => [
-                                Store::DEFAULT_STORE_ID => 'Option 1 Admin',
+                                Store::DEFAULT_STORE_ID => 'Option 1 Adminhtml',
                                 'default' => 'Option 1 Store 1',
                                 'fixture_second_store' => 'Option 1 Store 2',
                                 'fixture_third_store' => 'Option 1 Store 3',
@@ -99,7 +99,7 @@ abstract class AbstractAttributeDataWithOptions extends AbstractBaseAttributeDat
                         'option_2' => [
                             'order' => '6',
                             'value' => [
-                                Store::DEFAULT_STORE_ID => 'Option 2 Admin',
+                                Store::DEFAULT_STORE_ID => 'Option 2 Adminhtml',
                                 'default' => 'Option 2 Store 1',
                                 'fixture_second_store' => 'Option 2 Store 2',
                                 'fixture_third_store' => 'Option 2 Store 3',
@@ -150,7 +150,7 @@ abstract class AbstractAttributeDataWithOptions extends AbstractBaseAttributeDat
                     ],
                     'value' => [
                         'option_0' => [
-                            'Admin value 1',
+                            'Adminhtml value 1',
                             'Default store view value 1',
                         ],
                     ],
@@ -166,7 +166,7 @@ abstract class AbstractAttributeDataWithOptions extends AbstractBaseAttributeDat
                     ],
                     'value' => [
                         'option_1' => [
-                            'Admin value 2',
+                            'Adminhtml value 2',
                             'Default store view value 2',
                         ],
                     ],

@@ -67,7 +67,7 @@ class ControllerActionTest extends TestCase
 
     private function assertEventDispatchCount($eventName, $expectedCount)
     {
-        $message = sprintf('Event %s was expected to be dispatched %d time(s).', $eventName, $expectedCount);
+        $message = sprintf('Observer %s was expected to be dispatched %d time(s).', $eventName, $expectedCount);
         $this->assertCount($expectedCount, $this->getEventManager()->spyOnDispatchedEvent($eventName), $message);
     }
 

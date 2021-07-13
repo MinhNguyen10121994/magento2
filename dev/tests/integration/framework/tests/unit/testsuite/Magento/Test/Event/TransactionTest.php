@@ -5,7 +5,7 @@
  */
 
 /**
- * Test class for \Magento\TestFramework\Event\Transaction.
+ * Test class for \Magento\TestFramework\Observer\Transaction.
  */
 namespace Magento\Test\Event;
 

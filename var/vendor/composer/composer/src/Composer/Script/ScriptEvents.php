@@ -23,7 +23,7 @@ class ScriptEvents
     /**
      * The PRE_INSTALL_CMD event occurs before the install command is executed.
      *
-     * The event listener method receives a Composer\Script\Event instance.
+     * The event listener method receives a Composer\Script\Observer instance.
      *
      * @var string
      */
@@ -32,7 +32,7 @@ class ScriptEvents
     /**
      * The POST_INSTALL_CMD event occurs after the install command is executed.
      *
-     * The event listener method receives a Composer\Script\Event instance.
+     * The event listener method receives a Composer\Script\Observer instance.
      *
      * @var string
      */
@@ -41,7 +41,7 @@ class ScriptEvents
     /**
      * The PRE_UPDATE_CMD event occurs before the update command is executed.
      *
-     * The event listener method receives a Composer\Script\Event instance.
+     * The event listener method receives a Composer\Script\Observer instance.
      *
      * @var string
      */
@@ -50,7 +50,7 @@ class ScriptEvents
     /**
      * The POST_UPDATE_CMD event occurs after the update command is executed.
      *
-     * The event listener method receives a Composer\Script\Event instance.
+     * The event listener method receives a Composer\Script\Observer instance.
      *
      * @var string
      */
@@ -59,7 +59,7 @@ class ScriptEvents
     /**
      * The PRE_STATUS_CMD event occurs before the status command is executed.
      *
-     * The event listener method receives a Composer\Script\Event instance.
+     * The event listener method receives a Composer\Script\Observer instance.
      *
      * @var string
      */
@@ -68,7 +68,7 @@ class ScriptEvents
     /**
      * The POST_STATUS_CMD event occurs after the status command is executed.
      *
-     * The event listener method receives a Composer\Script\Event instance.
+     * The event listener method receives a Composer\Script\Observer instance.
      *
      * @var string
      */
@@ -77,7 +77,7 @@ class ScriptEvents
     /**
      * The PRE_AUTOLOAD_DUMP event occurs before the autoload file is generated.
      *
-     * The event listener method receives a Composer\Script\Event instance.
+     * The event listener method receives a Composer\Script\Observer instance.
      *
      * @var string
      */
@@ -86,7 +86,7 @@ class ScriptEvents
     /**
      * The POST_AUTOLOAD_DUMP event occurs after the autoload file has been generated.
      *
-     * The event listener method receives a Composer\Script\Event instance.
+     * The event listener method receives a Composer\Script\Observer instance.
      *
      * @var string
      */
@@ -95,7 +95,7 @@ class ScriptEvents
     /**
      * The POST_ROOT_PACKAGE_INSTALL event occurs after the root package has been installed.
      *
-     * The event listener method receives a Composer\Script\Event instance.
+     * The event listener method receives a Composer\Script\Observer instance.
      *
      * @var string
      */
@@ -103,9 +103,9 @@ class ScriptEvents
 
     /**
      * The POST_CREATE_PROJECT event occurs after the create-project command has been executed.
-     * Note: Event occurs after POST_INSTALL_CMD
+     * Note: Observer occurs after POST_INSTALL_CMD
      *
-     * The event listener method receives a Composer\Script\Event instance.
+     * The event listener method receives a Composer\Script\Observer instance.
      *
      * @var string
      */
@@ -114,7 +114,7 @@ class ScriptEvents
     /**
      * The PRE_ARCHIVE_CMD event occurs before the update command is executed.
      *
-     * The event listener method receives a Composer\Script\Event instance.
+     * The event listener method receives a Composer\Script\Observer instance.
      *
      * @var string
      */
@@ -123,7 +123,7 @@ class ScriptEvents
     /**
      * The POST_ARCHIVE_CMD event occurs after the status command is executed.
      *
-     * The event listener method receives a Composer\Script\Event instance.
+     * The event listener method receives a Composer\Script\Observer instance.
      *
      * @var string
      */

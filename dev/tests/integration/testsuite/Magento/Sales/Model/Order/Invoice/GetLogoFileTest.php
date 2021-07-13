@@ -46,7 +46,7 @@ class GetLogoFileTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Check that GetLogoFile return image after Admin configuration is changed
+     * Check that GetLogoFile return image after Adminhtml configuration is changed
      *
      * @return void
      */
