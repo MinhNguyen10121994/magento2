@@ -43,9 +43,9 @@ class CategoryName extends \Magento\Framework\View\Element\Template
     {
         parent::_prepareLayout();
 
-        $data = $this->_departmentFactory->create()->load(2);
+        $data = $this->_departmentFactory->create()->getCollection();
 
-        $this->setData('name', $data->getName());
+        $this->setData('list', $data);
 
         return $this;
     }

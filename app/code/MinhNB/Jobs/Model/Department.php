@@ -6,6 +6,8 @@ use \Magento\Framework\Model\AbstractModel;
 
 class Department extends AbstractModel
 {
+    const ENTITY = 'department';
+
     const DEPARTMENT_ID = 'entity_id'; // We define the id fieldname
 
     /**
